@@ -2,9 +2,21 @@
 <html>
 <head>
   <title>MarkMSmith GitHub Pages</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+  <script type="text/javascript" src="./chart_example.js"></script>
 </head>
 <body>
-Hello, welcome to my GitHub page.
-There's not much to see right now, but I'll add stuff in the future.
+<h1>Hello, welcome to my GitHub page.</h1>
+
+<h2>Experiment 1: PNG Export of an SVG</h2>
+<p>At work I've been using the awesome <a href="http://www.highcharts.com/">HighCharts</a> library.  It builds beautifully animated, SVG-based charts.  However, if you want to export those charts, you need to use their <a href="http://www.highcharts.com/docs/export-module/setting-up-the-server">export server</a>, which takes the chart config and renders it using PhantomJS.  I wanted to investigate if it was possible to create the png version of the image entirely client-side.  You can see the results below:</p>
+
+<div id='chartContainer'></div>
+<button id='exportButton'>Export Chart</button>
+<div id='otherContainer'>
+<img src=''>
+</div>
 </body>
 </html>
